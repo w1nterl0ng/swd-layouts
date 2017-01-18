@@ -14,6 +14,16 @@
   const updatePlayerInfo = document.getElementById('updatePlayerInfo');
   const playerInfo = nodecg.Replicant('playerInfo');
 
+  //pre-fill with existing info
+  playerInfo.on('change', newVal => {
+    leftPlayerName.value = playerInfo.value.leftPlayerName;
+    leftPlayerCharacters.value = playerInfo.value.leftPlayerCharacters;
+    leftPlayerScore.value = playerInfo.value.leftPlayerScore;
+    rightPlayerName.value = playerInfo.value.rightPlayerName;
+    rightPlayerCharacters.value = playerInfo.value.rightPlayerCharacters;
+    rightPlayerScore.value = playerInfo.value.rightPlayerScore;
+  });
+
   updatePlayerInfo.addEventListener('click', () => {
     playerInfo.value.leftPlayerName = leftPlayerName.value;
     playerInfo.value.leftPlayerCharacters = leftPlayerCharacters.value;

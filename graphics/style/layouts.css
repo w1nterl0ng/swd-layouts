@@ -54,7 +54,6 @@ body {
 #leftPlayerBox>div {
   margin-left: 10px;
   float: right;
-  height: 54px;
 }
 
 #leftCharacters {
@@ -66,6 +65,17 @@ body {
   margin-right: 30px;
 }
 
+.score {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 38px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+}
+
 #rightPlayerBox {
   left: 740px;
   text-align: left;
@@ -74,7 +84,6 @@ body {
 #rightPlayerBox>div {
   margin-right: 10px;
   float: left;
-  height: 54px;
 }
 
 #rightName {

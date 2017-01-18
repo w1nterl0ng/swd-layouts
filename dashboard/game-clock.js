@@ -10,7 +10,9 @@
   const gameTime = nodecg.Replicant('gameTime', { defaultValue: 2100 });
   const clockText = nodecg.Replicant('clockText');
 
-  clockSubText.value = clockText.value;
+  clockText.on('change', newVal => {
+    clockSubText.value = clockText.value;
+  });
 
   startTime.addEventListener('click', () => {
     nodecg.sendMessage('startTime');
