@@ -2,8 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/layouts.css">
 </head>
 <body>
-
+  <div class="" id="playerContainer">
+    <div id="leftPlayerBox" class="playerBox">
+      <div id="leftScore"></div>
+      <div id="leftName"><span id="leftPlayerName"></span>&nbsp;<span id="leftCharacters"></span></div>
+    </div>
+    <div id="rightPlayerBox" class="playerBox">
+      <div id="rightScore"></div>
+      <div id="rightName"><span id="rightPlayerName"></span>&nbsp;<span id="rightCharacters"></span></div>
+    </div>
+  </div>
+  <div id="timeContainer">
+    <div id="gameTimer"></div>
+    <div id="roundText"></div>
+  </div>
+  <script src="game-clock.js"></script>
+  <script src="player-bar.js"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="import" href="components/paper-input/paper-input.html">
+    <link rel="import" href="components/paper-button/paper-button.html">
+    <link rel="import" href="components/paper-material/paper-material.html">
+    <link rel="import" href="components/iron-flex-layout/iron-flex-layout-classes.html">
+    <style is="custom-style" include="iron-flex iron-flex-alignment">
+    </style>
+</head>
+<body>
+  <div class="layout horizontal">
+    <div class="flex">
+      <paper-input id="leftPlayerName" label="Left Player"></paper-input>
+      <paper-input id="leftPlayerCharacters" label="Left Characters"></paper-input>
+      <paper-input id="leftPlayerScore" label="Left Score"></paper-input>
+      <div class="layout horizontal" style="margin-bottom: 8px;">
+        <paper-button raised id="leftPlayerScoreDecrease" class="nodecg-danger flex">-</paper-button>
+        <paper-button raised id="leftPlayerScoreIncrease" class="nodecg-success flex">+</paper-button>
+      </div>
+    </div>
+    <div class="flex" style="margin-left: 10px;">
+      <paper-input id="rightPlayerName" label="Right Player"></paper-input>
+      <paper-input id="rightPlayerCharacters" label="Right Characters"></paper-input>
+      <paper-input id="rightPlayerScore" label="Right Score"></paper-input>
+      <div class="layout horizontal" style="margin-bottom: 8px;">
+        <paper-button raised id="rightPlayerScoreDecrease" class="nodecg-danger flex">-</paper-button>
+        <paper-button raised id="rightPlayerScoreIncrease" class="nodecg-success flex">+</paper-button>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="layout horizontal" style="margin-bottom: 8px;">
+    <paper-button raised id="updatePlayerInfo" class="nodecg-success flex">Update Player Info</paper-button>
+  </div>
+  <script src="player-bar.js"></script>
+</body>
+</html>

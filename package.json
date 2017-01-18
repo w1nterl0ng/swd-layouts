@@ -1,6 +1,6 @@
 {
   "name": "swd-layouts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Star Wars Destiny overlay for use as a bundle with NodeCG and OBS",
   "homepage": "",
   "author": {
@@ -23,10 +23,24 @@
     "compatibleRange": "~0.8.0",
     "dashboardPanels": [
       {
-        "name": "player-name",
-        "title": "Player Name",
+        "name": "player-bar",
+        "title": "Player Bar",
+        "width": 3,
+        "file": "player-bar.html",
+        "headerColor": "#888c86"
+      },
+      {
+        "name": "game-clock",
+        "title": "Game Clock",
         "width": 2,
-        "file": "player-name.html",
+        "file": "game-clock.html",
+        "headerColor": "#888c86"
+      },
+      {
+        "name": "card-pop",
+        "title": "Card Pop-Up",
+        "width": 2,
+        "file": "card-pop.html",
         "headerColor": "#888c86"
       }
     ],
