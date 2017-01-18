@@ -1,0 +1,43 @@
+{
+  "name": "swd-layouts",
+  "version": "0.0.0",
+  "description": "Star Wars Destiny overlay for use as a bundle with NodeCG and OBS",
+  "homepage": "",
+  "author": {
+    "name": "Fred Anderson",
+    "email": "whitefalcon@gmail.com",
+    "url": "www.github.com/w1nterl0ng"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "Star Wars",
+    "Destiny",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "~0.8.0",
+    "dashboardPanels": [
+      {
+        "name": "player-name",
+        "title": "Player Name",
+        "width": 2,
+        "file": "player-name.html",
+        "headerColor": "#888c86"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT"
+}
